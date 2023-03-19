@@ -1,0 +1,22 @@
+{% extends 'myapp/base.html' %}
+    {% block content %}
+<div class="container">
+    <div class="row">
+
+         <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">{{po.title}}</h4>
+  <p>{{po.desc}}</p>
+  <hr>
+
+</div>
+        <div class="fb-comments" data-href="http://127.0.0.1:8000/myapp/onedata/{{po.id}}" data-width="" data-numposts="5"></div>
+
+        <div class="fb-like" data-href="http://127.0.0.1:8000/myapp/onedata/{{po.id}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+
+    </div>
+<div>
+    <a href="{% url 'home' %}" class="btn btn-outline-danger mt-3">Back To Home</a>
+</div>
+    </div>
+    {% endblock %}
+	

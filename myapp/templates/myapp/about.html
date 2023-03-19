@@ -1,0 +1,35 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .bg-dark{
+    max-width:80%;
+    }
+.m-5 {
+    margin: 3rem!important;
+}
+.img-fluid{
+ width:100%;
+height:800px;
+}
+.btn-sm{
+margin-top:6px;
+}
+</style>
+
+<div class="container">
+    <h2 class="text-white text-center m-5 text-primary">Founder of the Websites</h2>
+ <div class="row">
+<div class="col-sm-6">
+<img src="{% static 'myapp/image/img.jpg'%}" class="img-fluid" >
+</div>
+<div class="col-sm-6">
+
+    <p>
+This websites is launched in 2023 by Mohd Aatif Khan. He has made 2 in 1 websites where user can do shopping and blogging in a single website.he made it to make the user to easier to do both.
+        During an interview, Atif recalled his childhood home "was usually a mess, with computers, science, and technology magazines and Popular Science magazines all over the place", an environment in which he immersed himself. Page was an avid reader during his youth, writing in his 2013 Google founders letter: "I remember spending a huge amount of time pouring [sic] over books and magazines".According to writer Nicholas Carlson, the combined influence of Atif's home atmosphere and his attentive parents "fostered creativity and invention". Atif also played instruments and studied music composition while growing up. His parents sent him to music summer camp — Interlochen Arts Camp at Interlochen, Michigan, and Page has mentioned that his musical education inspired his impatience and obsession with speed in computing. "In some sense, I feel like music training led to the high-speed legacy of Google for me". In an interview Page said that "In music, you're very cognizant of time. Time is like the primary thing" and that "If you think about it from a music point of view, if you're a percussionist, you hit something, it's got to happen in milliseconds, fractions of a second".
+    </p>
+ </div>
+  </div>
+</div>
+{% endblock content %}
